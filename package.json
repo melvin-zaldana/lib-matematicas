@@ -1,0 +1,23 @@
+{
+  "name": "lib-matematicas",
+  "version": "1.0.0",
+  "description": "Libreria de operaciones basicas de matematicas disponible en NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melvin-zaldana/lib-matematicas.git"
+  },
+  "keywords": [
+    "matematicas",
+    "math"
+  ],
+  "author": "Melvin Zaldaña",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melvin-zaldana/lib-matematicas/issues"
+  },
+  "homepage": "https://github.com/melvin-zaldana/lib-matematicas#readme"
+}
