@@ -1,6 +1,6 @@
 {
   "name": "lib-matematicas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Libreria de operaciones basicas de matematicas disponible en NPM",
   "main": "index.js",
   "scripts": {
