@@ -8,7 +8,7 @@ module.exports = {
      * @returns 
      */
     suma: function (n1,n2){
-        return n1+n2;
+        return (this.esNumero(n1,n2) ? n1+n2: this.mensajeError());
     },
     
     /**
@@ -20,7 +20,7 @@ module.exports = {
      * @returns 
      */
     resta: function (n1,n2){
-        return n1-n2;
+        return (this.esNumero(n1,n2) ? n1-n2: this.mensajeError());
     },
 
     /**
@@ -32,7 +32,7 @@ module.exports = {
      * @returns 
      */
     multiplicacion: function (n1,n2){
-        return n1*n2;
+        return (this.esNumero(n1,n2) ? n1*n2: this.mensajeError());
     },
 
     /**
@@ -44,6 +44,24 @@ module.exports = {
      * @returns 
      */
     dividir: function (n1,n2){
-        return n1/n2;
+        return (this.esNumero(n1,n2) ? n1/n2: this.mensajeError());
     },
+    /**
+     * Mensaje de error que se ejecuta cuando algun valor no es númerico
+     */
+    mensajeError: function() {
+        console.log('Uno o dos valores no son númericos');
+    },
+    /**
+     * Función para comprobar si los valores son numericos
+     * @param {*} n1 
+     * @param {*} n2 
+     * @returns 
+     */
+    esNumero: function (n1, n2){
+        if(typeof n1 !== 'number' || typeof n2 !== 'number'){
+            return false;
+        }
+        return true;
+    }
 }
